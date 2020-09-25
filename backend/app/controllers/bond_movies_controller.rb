@@ -1,0 +1,2 @@
+class BondMoviesController < ApplicationController
+end

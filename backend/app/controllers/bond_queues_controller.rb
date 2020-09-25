@@ -1,0 +1,2 @@
+class BondQueuesController < ApplicationController
+end
