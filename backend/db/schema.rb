@@ -40,17 +40,23 @@ ActiveRecord::Schema.define(version: 2020_09_25_065754) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "genre"
+    t.string "year"
+    t.string "rated"
+    t.string "runtime"
+    t.string "actors"
+    t.string "director"
+    t.string "plot"
     t.string "poster"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "user_movies", force: :cascade do |t|
-    t.bigint "movies_id", null: false
+    t.bigint "movie_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["movies_id"], name: "index_user_movies_on_movies_id"
+    t.index ["movie_id"], name: "index_user_movies_on_movie_id"
     t.index ["user_id"], name: "index_user_movies_on_user_id"
   end
 
@@ -58,7 +64,7 @@ ActiveRecord::Schema.define(version: 2020_09_25_065754) do
     t.string "name"
     t.integer "age"
     t.string "username"
-    t.string "password"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -66,6 +72,6 @@ ActiveRecord::Schema.define(version: 2020_09_25_065754) do
   add_foreign_key "bond_movies", "bonds"
   add_foreign_key "bond_movies", "movies"
   add_foreign_key "bonds", "users"
-  add_foreign_key "user_movies", "movies", column: "movies_id"
+  add_foreign_key "user_movies", "movies"
   add_foreign_key "user_movies", "users"
 end
