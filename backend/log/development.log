@@ -8192,3 +8192,412 @@ Processing by MoviesController#index as */*
 Completed 200 OK in 24ms (Views: 18.7ms | ActiveRecord: 2.5ms | Allocations: 7211)
 
 
+Started POST "/login" for ::1 at 2020-09-30 10:14:01 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (11.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 300ms (Views: 0.3ms | ActiveRecord: 22.5ms | Allocations: 9212)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:14:02 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 58ms (Views: 50.3ms | ActiveRecord: 9.3ms | Allocations: 14871)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:14:39 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 48ms (Views: 40.3ms | ActiveRecord: 0.9ms | Allocations: 7230)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:14:39 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 190ms (Views: 184.7ms | ActiveRecord: 1.1ms | Allocations: 7214)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:14:43 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 1.0ms | Allocations: 7230)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:14:43 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (7.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 33ms (Views: 21.3ms | ActiveRecord: 9.4ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:16:56 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Started GET "/movies" for ::1 at 2020-09-30 10:16:56 -0500
+  [1m[36mMovie Load (9.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 81ms (Views: 68.8ms | ActiveRecord: 9.9ms | Allocations: 7964)
+
+
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 42ms (Views: 34.5ms | ActiveRecord: 2.6ms | Allocations: 7312)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:19:26 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (18.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (13.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 649ms (Views: 597.1ms | ActiveRecord: 31.6ms | Allocations: 7237)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:19:27 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (159.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 200ms (Views: 25.3ms | ActiveRecord: 167.4ms | Allocations: 7212)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:21:49 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 1.2ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:21:49 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 1.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:21:56 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 26ms (Views: 15.8ms | ActiveRecord: 4.4ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:21:56 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.7ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:22:09 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (8.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 26ms (Views: 11.2ms | ActiveRecord: 11.8ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:22:09 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:23:16 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (7.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 23ms (Views: 12.9ms | ActiveRecord: 7.7ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:23:16 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.7ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:23:29 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 79ms (Views: 48.1ms | ActiveRecord: 27.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:23:30 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (22.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 74ms (Views: 41.4ms | ActiveRecord: 24.2ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:23:56 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (17.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 42ms (Views: 22.0ms | ActiveRecord: 18.4ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:23:56 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 14ms (Views: 11.1ms | ActiveRecord: 1.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:27:59 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (11.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 32ms (Views: 16.7ms | ActiveRecord: 12.3ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:27:59 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 23ms (Views: 17.8ms | ActiveRecord: 1.4ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:30:28 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.5ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:30:28 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.5ms | Allocations: 7214)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:30:34 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (11.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 40ms (Views: 23.5ms | ActiveRecord: 14.4ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:30:34 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (7.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 25ms (Views: 12.2ms | ActiveRecord: 9.8ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:36:19 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 33ms (Views: 15.2ms | ActiveRecord: 9.9ms | Allocations: 7313)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:36:20 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 84ms (Views: 79.5ms | ActiveRecord: 1.8ms | Allocations: 7211)
+
+
+Started POST "/signup" for ::1 at 2020-09-30 10:39:23 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"joeblow", "password"=>"[FILTERED]", "name"=>"joe", "age"=>"21"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "joe"], ["age", 21], ["username", "joeblow"], ["password_digest", "$2a$12$dE/sBo9PStx1sVvqi/sR/uGosZtsp2q5bPBjKf99iqcAFgs4BdgHK"], ["created_at", "2020-09-30 15:39:24.611859"], ["updated_at", "2020-09-30 15:39:24.611859"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 200 OK in 878ms (Views: 0.3ms | ActiveRecord: 6.5ms | Allocations: 3235)
+
+
+Started POST "/login" for ::1 at 2020-09-30 10:39:28 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"joeblow", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"joeblow", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "joeblow"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 300ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 799)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:39:28 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (26.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 56ms (Views: 26.2ms | ActiveRecord: 27.6ms | Allocations: 7211)
+
+
+Started POST "/login" for ::1 at 2020-09-30 10:39:45 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (13.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 337ms (Views: 0.3ms | ActiveRecord: 13.2ms | Allocations: 796)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:39:45 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 44ms (Views: 37.6ms | ActiveRecord: 3.8ms | Allocations: 7211)
+
+
+Started POST "/login" for ::1 at 2020-09-30 10:39:52 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"random", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"random", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "random"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 677)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:39:52 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:40:05 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:40:05 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started POST "/login" for ::1 at 2020-09-30 10:44:38 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 308ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 796)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 10:44:38 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (9.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 31ms (Views: 15.9ms | ActiveRecord: 10.6ms | Allocations: 7211)
+
+
+Started POST "/login" for ::1 at 2020-09-30 13:39:36 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 259ms (Views: 0.9ms | ActiveRecord: 0.7ms | Allocations: 896)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 13:39:37 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 26ms (Views: 12.4ms | ActiveRecord: 2.5ms | Allocations: 7216)
+
+
