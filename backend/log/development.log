@@ -8601,3 +8601,1807 @@ Processing by MoviesController#index as */*
 Completed 200 OK in 26ms (Views: 12.4ms | ActiveRecord: 2.5ms | Allocations: 7216)
 
 
+Started GET "/movies" for ::1 at 2020-09-30 14:33:33 -0500
+  [1m[35m (5.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 66ms (Views: 17.9ms | ActiveRecord: 33.4ms | Allocations: 22534)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:33:33 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 27ms (Views: 21.6ms | ActiveRecord: 0.6ms | Allocations: 7211)
+
+
+Started POST "/login" for ::1 at 2020-09-30 14:33:57 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 262ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 954)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:33:57 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 42ms (Views: 36.1ms | ActiveRecord: 1.7ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:36:28 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (4.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 48ms (Views: 37.5ms | ActiveRecord: 6.5ms | Allocations: 7232)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:36:28 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.9ms | Allocations: 7212)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:36:50 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.7ms | Allocations: 7229)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:36:50 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:36:57 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 0.7ms | Allocations: 7230)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:36:57 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (13.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 52ms (Views: 25.6ms | ActiveRecord: 21.2ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:37:26 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 1.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:37:26 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 1.4ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:38:21 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 1.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:38:21 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 22ms (Views: 10.2ms | ActiveRecord: 8.9ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:38:45 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (3.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 46ms (Views: 15.8ms | ActiveRecord: 11.8ms | Allocations: 7214)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:38:45 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (3.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 30ms (Views: 14.4ms | ActiveRecord: 12.4ms | Allocations: 7212)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:38:50 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (3.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 19ms (Views: 10.0ms | ActiveRecord: 5.9ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:38:50 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.7ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:39:06 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 2.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:39:06 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.5ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:40:10 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.8ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:40:10 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:41:41 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 1.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:41:41 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (20.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 35ms (Views: 11.0ms | ActiveRecord: 20.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:42:38 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.9ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:42:38 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 0.8ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:43:17 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 3.3ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:43:17 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (9.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 25ms (Views: 12.5ms | ActiveRecord: 10.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:43:53 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (12.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 23ms (Views: 7.1ms | ActiveRecord: 14.2ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:43:53 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.8ms | Allocations: 7214)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:44:31 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 18ms (Views: 10.3ms | ActiveRecord: 5.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:44:31 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (5.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 19ms (Views: 8.7ms | ActiveRecord: 8.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:44:49 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (17.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 66ms (Views: 41.2ms | ActiveRecord: 18.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:44:50 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.8ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:53:24 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (9.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (5.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 345ms (Views: 252.3ms | ActiveRecord: 15.8ms | Allocations: 7312)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:53:24 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (7.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 92ms (Views: 76.8ms | ActiveRecord: 11.3ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:54:51 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (8.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 27ms (Views: 14.0ms | ActiveRecord: 9.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:54:51 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 2.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:59:05 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 1.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:59:05 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (22.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (151.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 247ms (Views: 63.3ms | ActiveRecord: 174.2ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:59:14 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 34ms (Views: 20.8ms | ActiveRecord: 9.2ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 14:59:14 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (31.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (32.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 95ms (Views: 29.1ms | ActiveRecord: 63.5ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:04:01 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 27ms (Views: 20.5ms | ActiveRecord: 2.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:04:01 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 59ms (Views: 41.6ms | ActiveRecord: 2.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:09:48 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 34ms (Views: 20.6ms | ActiveRecord: 8.6ms | Allocations: 7313)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:09:49 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 32ms (Views: 15.0ms | ActiveRecord: 11.7ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:10:10 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (126.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (3.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 157ms (Views: 23.7ms | ActiveRecord: 130.3ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:10:10 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (5.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 84ms (Views: 54.4ms | ActiveRecord: 27.4ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:10:56 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (30.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (39.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 93ms (Views: 18.0ms | ActiveRecord: 69.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:10:56 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (5.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 48ms (Views: 36.0ms | ActiveRecord: 8.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:20:58 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (191.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 510ms (Views: 90.2ms | ActiveRecord: 192.3ms | Allocations: 7312)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:21:00 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 61ms (Views: 51.4ms | ActiveRecord: 3.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:21:05 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 1.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:21:05 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (28.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 87ms (Views: 49.8ms | ActiveRecord: 30.3ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:26:19 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (165.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (14.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 200ms (Views: 17.2ms | ActiveRecord: 179.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:26:19 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (139.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 163ms (Views: 14.3ms | ActiveRecord: 141.1ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:26:40 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (242.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 262ms (Views: 16.0ms | ActiveRecord: 242.9ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:26:41 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (138.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (20.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 355ms (Views: 192.2ms | ActiveRecord: 159.1ms | Allocations: 7218)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:27:45 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (14.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (12.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 42ms (Views: 13.0ms | ActiveRecord: 26.2ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 15:27:45 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.9ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 16:58:04 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 45ms (Views: 21.5ms | ActiveRecord: 3.2ms | Allocations: 7312)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 16:58:04 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.8ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 17:00:07 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 3.0ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 17:00:07 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 37ms (Views: 23.0ms | ActiveRecord: 1.6ms | Allocations: 7211)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 17:33:28 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 51ms (Views: 21.5ms | ActiveRecord: 15.8ms | Allocations: 22534)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 17:33:29 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 21ms (Views: 16.5ms | ActiveRecord: 0.7ms | Allocations: 7211)
+
+
+Started POST "/login" for ::1 at 2020-09-30 17:33:37 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 260ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 954)
+
+
+Started GET "/movies" for ::1 at 2020-09-30 17:33:38 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 47ms (Views: 39.4ms | ActiveRecord: 3.2ms | Allocations: 7214)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mBondMovie Load (19.4ms)[0m  [1m[34mSELECT "bond_movies".* FROM "bond_movies"[0m
+  [1m[36mBond Load (6.8ms)[0m  [1m[34mSELECT "bonds".* FROM "bonds"[0m
+  [1m[36mUserMovie Load (0.7ms)[0m  [1m[34mSELECT "user_movies".* FROM "user_movies"[0m
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (31.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 51]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.9ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 52]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 53]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 54]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.1ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 55]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.9ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 56]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 57]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 58]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 59]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 60]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 61]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 62]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.1ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 63]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 64]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 65]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 66]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 67]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 68]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 69]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 70]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.9ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 71]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 72]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 73]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 74]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 75]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ted"], ["age", 30], ["username", "Tneebs"], ["password_digest", "$2a$12$D.29lTeGDSGPV.6bnV./UOtPm8oB0UIu9Edh9fG/QhISUJrz2VDRO"], ["created_at", "2020-10-01 18:39:08.557010"], ["updated_at", "2020-10-01 18:39:08.557010"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shivang"], ["age", 25], ["username", "Shivvy"], ["password_digest", "$2a$12$/whOdkDYEggPLbVpVwXKs.WLRrqsN940FU/5d7StJmt5sBSTc.tha"], ["created_at", "2020-10-01 18:39:08.812873"], ["updated_at", "2020-10-01 18:39:08.812873"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.8ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Mr. Deeds"], ["genre", "Comedy"], ["year", "2002"], ["rated", "PG-13"], ["runtime", "96 min"], ["actors", "Adam Sandler, Winona Ryder, John Turturro, Allen Covert"], ["director", "Steven Brill"], ["plot", "A sweet-natured, small-town guy inherits a controlling stake in a media conglomerate and begins to do business his way."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTU3NTE3M2QtNWQ0MS00ZmRkLWIwNTMtOTA0ZGM5N2UwMWNjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.818112"], ["updated_at", "2020-10-01 18:39:08.818112"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Despicable Me"], ["genre", "Comedy"], ["year", "2010"], ["rated", "PG"], ["runtime", "95 min"], ["actors", "Steve Carell, Jason Segel, Russell Brand, Julie Andrews"], ["director", "Pierre Coffin, Chris Renaud"], ["plot", "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.822737"], ["updated_at", "2020-10-01 18:39:08.822737"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Coneheads"], ["genre", "Comedy"], ["year", "1993"], ["rated", "PG"], ["runtime", "88 min"], ["actors", "Robert Knott, Jonathan Penner, Whip Hubley, Dan Aykroyd"], ["director", "Steve Barron"], ["plot", "Aliens with conical crania crash-land on Earth."], ["poster", "https://m.media-amazon.com/images/M/MV5BYTNjNGM5OTktM2Q1Zi00YTFmLWJlYzUtMTMyMzgzNjNlNmQzL2ltYWdlXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.826890"], ["updated_at", "2020-10-01 18:39:08.826890"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Grandma's Boy"], ["genre", "Comedy"], ["year", "2006"], ["rated", "R"], ["runtime", "94 min"], ["actors", "Linda Cardellini, Allen Covert, Peter Dante, Shirley Jones"], ["director", "Nicholaus Goossen"], ["plot", "A thirty-five-year-old video game tester has to move in with his grandma and her two old lady roommates."], ["poster", "https://m.media-amazon.com/images/M/MV5BMDFiYzQ0NzktMGNkNy00YTQ0LTgxODgtNDViNGIxMTc1NGFjL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.831075"], ["updated_at", "2020-10-01 18:39:08.831075"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Ted"], ["genre", "Comedy"], ["year", "2012"], ["rated", "R"], ["runtime", "106 min"], ["actors", "Mark Wahlberg, Mila Kunis, Seth MacFarlane, Joel McHale"], ["director", "Seth MacFarlane"], ["plot", "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear or his girlfriend, Lori."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.837023"], ["updated_at", "2020-10-01 18:39:08.837023"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Clerks"], ["genre", "Comedy"], ["year", "1994"], ["rated", "R"], ["runtime", "92 min"], ["actors", "Brian O'Halloran, Jeff Anderson, Marilyn Ghigliotti, Lisa Spoonauer"], ["plot", "A day in the lives of two convenience clerks named Dante and Randal as they annoy customers, discuss movies, and play hockey on the store roof."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.841571"], ["updated_at", "2020-10-01 18:39:08.841571"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Clerk II"], ["genre", "Comedy"], ["year", "2006"], ["rated", "R"], ["runtime", "97 min"], ["actors", "Brian O'Halloran, Jeff Anderson, Jason Mewes, Kevin Smith"], ["plot", "A calamity at Dante and Randal's shops sends them looking for new horizons - but they ultimately settle at the fast food empire Mooby's."], ["poster", "https://m.media-amazon.com/images/M/MV5BODg1MzY2NDY0OF5BMl5BanBnXkFtZTcwNDgyMzQzMQ@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.845629"], ["updated_at", "2020-10-01 18:39:08.845629"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Mallrats"], ["genre", "Comedy"], ["year", "1995"], ["rated", "R"], ["runtime", "94 min"], ["actors", "Shannen Doherty, Jeremy London, Jason Lee, Claire Forlani"], ["plot", "Both dumped by their girlfriends, two best friends seek refuge in the local mall."], ["poster", "https://m.media-amazon.com/images/M/MV5BZGNhYzE4YzktNDIwNC00YmRiLTgyOTgtMzk1ZjNhNmI4ODI1XkEyXkFqcGdeQXVyMTk3NDAwMzI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.849590"], ["updated_at", "2020-10-01 18:39:08.849590"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Dogma"], ["genre", "Comedy"], ["year", "1999"], ["rated", "R"], ["runtime", "130 min"], ["actors", "Bud Cort, Barret Hackney, Jared Pfennigwerth, Kitao Sakurai"], ["plot", "An abortion clinic worker with a special heritage is called upon to save the existence of humanity from being negated by two renegade angels trying to exploit a loop-hole and reenter Heaven."], ["poster", "https://m.media-amazon.com/images/M/MV5BYzAyOWUyZjQtNDBiMy00ZDExLTgwNmMtZDdmY2ViNzkyN2Y0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.854003"], ["updated_at", "2020-10-01 18:39:08.854003"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Addams Family"], ["genre", "Comedy"], ["year", "1991"], ["rated", "PG-13"], ["runtime", "99 min"], ["actors", "Anjelica Huston, Raul Julia, Christopher Lloyd, Dan Hedaya"], ["plot", "Con artists plan to fleece an eccentric family using an accomplice who claims to be their long-lost uncle."], ["poster", "https://m.media-amazon.com/images/M/MV5BODc1NmY0MDUtNjUzNS00ODdhLWJlN2ItMTgwZjczZjI0MDkyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.858806"], ["updated_at", "2020-10-01 18:39:08.858806"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Being John Malkovich"], ["genre", "Drama"], ["year", "1999"], ["rated", "R"], ["runtime", "113 min"], ["actors", "John Cusack, Cameron Diaz, Ned Bellamy, Eric Weinstein"], ["director", "Spike Jonze"], ["plot", "A puppeteer discovers a portal that leads literally into the head of movie star John Malkovich."], ["poster", "https://m.media-amazon.com/images/M/MV5BYmUxY2MyOTQtYjRlMi00ZWEwLTkzODctZDMxNDcyNTFhYjNjXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.863178"], ["updated_at", "2020-10-01 18:39:08.863178"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Eternal Sunshine of the Spotless Mind"], ["genre", "Drama"], ["year", "2004"], ["rated", "R"], ["runtime", "108 min"], ["actors", "Jim Carrey, Kate Winslet, Gerry Robert Byrne, Elijah Wood"], ["director", "Michel Gondry"], ["plot", "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.867217"], ["updated_at", "2020-10-01 18:39:08.867217"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Into the Wild"], ["genre", "Drama"], ["year", "2007"], ["rated", "R"], ["runtime", "148 min"], ["actors", "Emile Hirsch, Marcia Gay Harden, William Hurt, Jena Malone"], ["director", "Sean Penn"], ["plot", "After graduating from Emory University, top student and athlete Christopher McCandless abandons his possessions, gives his entire $24,000 savings account to charity and hitchhikes to Alaska to live in the wilderness. Along the way, Christopher encounters a series of characters that shape his life."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTAwNDEyODU1MjheQTJeQWpwZ15BbWU2MDc3NDQwNw@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.871307"], ["updated_at", "2020-10-01 18:39:08.871307"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Pulp Fiction"], ["genre", "Drama"], ["year", "1994"], ["rated", "R"], ["runtime", "154 min"], ["actors", "Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta"], ["director", "Quentin Tarantino"], ["plot", "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."], ["poster", "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.875378"], ["updated_at", "2020-10-01 18:39:08.875378"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Kids"], ["genre", "Drama"], ["year", "1995"], ["rated", "Unrated"], ["runtime", "91 min"], ["actors", "Leo Fitzpatrick, Sarah Henderson, Justin Pierce, Joseph Chan"], ["director", "Larry Clark"], ["plot", "A day in the life of a group of teens as they travel around New York City skating, drinking, smoking and deflowering virgins."], ["poster", "https://m.media-amazon.com/images/M/MV5BNTNmN2QyNTgtMTk0ZC00NmFhLWJlNzctZmMyYTczZTYyMzA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.879958"], ["updated_at", "2020-10-01 18:39:08.879958"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "One Flew Over the Cuckoo's Nest"], ["genre", "Drama"], ["year", "1975"], ["rated", "R"], ["runtime", "133 min"], ["actors", "Michael Berryman, Peter Brocco, Dean R. Brooks, Alonzo Brown"], ["plot", "A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients."], ["poster", "https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.884247"], ["updated_at", "2020-10-01 18:39:08.884247"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Founder"], ["genre", "Drama"], ["year", "2016"], ["rated", "PG-13"], ["runtime", "115 min"], ["actors", "Michael Keaton, Nick Offerman, John Carroll Lynch, Linda Cardellini"], ["plot", "The story of Ray Kroc, a salesman who turned two brothers' innovative fast food eatery, McDonald's, into the biggest restaurant business in the world, with a combination of ambition, persistence, and ruthlessness."], ["poster", "https://m.media-amazon.com/images/M/MV5BMzExNDg0MDk1M15BMl5BanBnXkFtZTgwNzE1Mjg0MDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.903264"], ["updated_at", "2020-10-01 18:39:08.903264"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Million Dollar Baby"], ["genre", "Drama"], ["year", "2004"], ["rated", "PG-13"], ["runtime", "132 min"], ["actors", "Clint Eastwood, Hilary Swank, Morgan Freeman, Jay Baruchel"], ["plot", "A determined woman works with a hardened boxing trainer to become a professional."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTkxNzA1NDQxOV5BMl5BanBnXkFtZTcwNTkyMTIzMw@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.907577"], ["updated_at", "2020-10-01 18:39:08.907577"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "There Will Be Blood"], ["genre", "Drama"], ["year", "2007"], ["rated", "R"], ["runtime", "158 min"], ["actors", "Daniel Day-Lewis, Martin Stringer, Matthew Braden Stringer, Jacob Stringer"], ["plot", "A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business."], ["poster", "https://m.media-amazon.com/images/M/MV5BMjAxODQ4MDU5NV5BMl5BanBnXkFtZTcwMDU4MjU1MQ@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.912812"], ["updated_at", "2020-10-01 18:39:08.912812"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Taxi Driver"], ["genre", "Drama"], ["year", "1976"], ["rated", "R"], ["runtime", "114 min"], ["actors", "Diahnne Abbott, Frank Adu, Victor Argo, Gino Ardito"], ["plot", "A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute."], ["poster", "https://m.media-amazon.com/images/M/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.916779"], ["updated_at", "2020-10-01 18:39:08.916779"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Bloodsport"], ["genre", "Action"], ["year", "1988"], ["rated", "R"], ["runtime", "92 min"], ["actors", "Jean-Claude Van Damme, Donald Gibb, Leah Ayres, Norman Burton"], ["director", "Newt Arnold"], ["plot", "Bloodsport follows Frank Dux, an American martial artist serving in the military, who decides to leave the army to compete in a martial arts tournament in Hong Kong where fights to the death can occur."], ["poster", "https://m.media-amazon.com/images/M/MV5BNTJmMGEzMTQtMzQzMi00YjE1LWI4MTctNjY0NWZiYzE2MDVhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.920676"], ["updated_at", "2020-10-01 18:39:08.920676"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "A Knight's Tale"], ["genre", "Action"], ["year", "2001"], ["rated", "PG-13"], ["runtime", "132 min"], ["actors", "Heath Ledger, Rufus Sewell, Shannyn Sossamon, Paul Bettany"], ["director", "Brian Helgeland"], ["plot", "After his master dies, a peasant squire, fueled by his desire for food and glory, creates a new identity for himself as a knight."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTE5OTE4OTE2Nl5BMl5BanBnXkFtZTYwMDkzMTQ3._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.924578"], ["updated_at", "2020-10-01 18:39:08.924578"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Anaconda"], ["genre", "Action"], ["year", "1997"], ["rated", "R"], ["runtime", "89 min"], ["actors", "Jennifer Lopez, Ice Cube, Jon Voight, Eric Stoltz"], ["director", "Luis Llosa"], ["plot", "A National Geographic film crew is taken hostage by an insane hunter, who forces them along on his quest to capture the world's largest - and deadliest - snake."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTMzMTU5NjcxNl5BMl5BanBnXkFtZTcwMzE2NDU2MQ@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.928603"], ["updated_at", "2020-10-01 18:39:08.928603"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Sin City"], ["genre", "Action"], ["year", "2005"], ["rated", "R"], ["runtime", "124 min"], ["actors", "Jessica Alba, Devon Aoki, Alexis Bledel, Powers Boothe"], ["director", "Frank Miller, Quentin Tarantino, Robert Rodriguez"], ["plot", "A movie that explores the dark and miserable town, Basin City, tells the story of three different people, all caught up in violent corruption."], ["poster", "https://m.media-amazon.com/images/M/MV5BODZmYjMwNzEtNzVhNC00ZTRmLTk2M2UtNzE1MTQ2ZDAxNjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.932489"], ["updated_at", "2020-10-01 18:39:08.932489"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Star Wars: Episode IV - A New Hope"], ["genre", "Action"], ["year", "1977"], ["rated", "PG"], ["runtime", "121 min"], ["actors", "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing"], ["director", "George Lucas"], ["plot", "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.936450"], ["updated_at", "2020-10-01 18:39:08.936450"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Underworld"], ["genre", "Action"], ["year", "2003"], ["rated", "R"], ["runtime", "121 min"], ["actors", "Kate Beckinsale, Scott Speedman, Michael Sheen, Shane Brolly"], ["plot", "Selene, a vampire warrior, is entrenched in a conflict between vampires and werewolves, while falling in love with Michael, a human who is sought by werewolves for unknown reasons."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTk1OTc2ZmUtODU0Yy00NGJiLWJmNmQtODI0MzBjODk3MjI4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.940327"], ["updated_at", "2020-10-01 18:39:08.940327"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Terminator"], ["genre", "Action"], ["year", "1984"], ["rated", "R"], ["runtime", "107 min"], ["actors", "Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Paul Winfield"], ["plot", "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation."], ["poster", "https://m.media-amazon.com/images/M/MV5BYTViNzMxZjEtZGEwNy00MDNiLWIzNGQtZDY2MjQ1OWViZjFmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.944300"], ["updated_at", "2020-10-01 18:39:08.944300"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Angel Has Fallen"], ["genre", "Action"], ["year", "2019"], ["rated", "R"], ["runtime", "121 min"], ["actors", "Gerard Butler, Frederick Schmidt, Danny Huston, Rocci Williams"], ["plot", "Mike Banning is framed for the attempted assassination of the President and must evade his own agency and the FBI as he tries to uncover the real threat."], ["poster", "https://m.media-amazon.com/images/M/MV5BYmRmMWZhZGItYzA4MC00ZDYyLWE0OTMtYmM0MWRiN2Q4NGU2XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.948565"], ["updated_at", "2020-10-01 18:39:08.948565"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Mad Max"], ["genre", "Action"], ["year", "1979"], ["rated", "R"], ["runtime", "88 min"], ["actors", "Mel Gibson, Joanne Samuel, Hugh Keays-Byrne, Steve Bisley"], ["plot", "In a self-destructing world, a vengeful Australian policeman sets out to stop a violent motorcycle gang."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTM4Mjg5ODEzMV5BMl5BanBnXkFtZTcwMDc3NDk0NA@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.952434"], ["updated_at", "2020-10-01 18:39:08.952434"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Die Hard"], ["genre", "Action"], ["year", "1988"], ["rated", "R"], ["runtime", "132 min"], ["actors", "Bruce Willis, Bonnie Bedelia, Reginald VelJohnson, Paul Gleason"], ["plot", "An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles."], ["poster", "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.956578"], ["updated_at", "2020-10-01 18:39:08.956578"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Exorcist"], ["genre", "Horror"], ["year", "1973"], ["rated", "R"], ["runtime", "122 min"], ["actors", "Ellen Burstyn, Max von Sydow, Lee J. Cobb, Kitty Winn"], ["director", "William Friedkin"], ["plot", "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her."], ["poster", "https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.962092"], ["updated_at", "2020-10-01 18:39:08.962092"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "It Follows"], ["genre", "Horror"], ["year", "2014"], ["rated", "R"], ["runtime", "100 min"], ["actors", "Bailey Spry, Carollette Phillips, Loren Bass, Keir Gilchrist"], ["director", "David Robert Mitchell"], ["plot", "A young woman is followed by an unknown supernatural force after a sexual encounter."], ["poster", "https://m.media-amazon.com/images/M/MV5BMmU0MjBlYzYtZWY0MC00MjliLWI3ZmUtMzhlZDVjMWVmYWY4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.965833"], ["updated_at", "2020-10-01 18:39:08.965833"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Poltergeist"], ["genre", "Horror"], ["year", "1982"], ["rated", "PG"], ["runtime", "114 min"], ["actors", "Craig T. Nelson, JoBeth Williams, Beatrice Straight, Dominique Dunne"], ["director", "Tobe Hooper"], ["plot", "A family's home is haunted by a host of demonic ghosts."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzliZmRlYTctYmNkYS00NzE5LWI1OWQtMTRiODY5MDMwMTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.969514"], ["updated_at", "2020-10-01 18:39:08.969514"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Omen"], ["genre", "Horror"], ["year", "1976"], ["rated", "R"], ["runtime", "111 min"], ["actors", "Gregory Peck, Lee Remick, David Warner, Billie Whitelaw"], ["director", "Richard Donner"], ["plot", "Mysterious deaths surround an American ambassador. Could the child that he is raising actually be the Antichrist? The Devil's own son?"], ["poster", "https://m.media-amazon.com/images/M/MV5BZmNjZDcwNTMtMjQxMy00ZTY5LTg4M2YtYjA5NDliNjNhYzQ3XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.973170"], ["updated_at", "2020-10-01 18:39:08.973170"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Blair Witch Project"], ["genre", "Horror"], ["year", "1999"], ["rated", "R"], ["runtime", "81 min"], ["actors", "Heather Donahue, Joshua Leonard, Michael C. Williams, Bob Griffin"], ["director", "Daniel Myrick, Eduardo Sánchez"], ["plot", "Three film students vanish after traveling into a Maryland forest to film a documentary on the local Blair Witch legend, leaving only their footage behind."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzQ1NDBlNDItMDAyYS00YTI2LTgwMmYtMzAwMzg4NDFlM2ZmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.977128"], ["updated_at", "2020-10-01 18:39:08.977128"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Creep"], ["genre", "Horror"], ["year", "2014"], ["rated", "R"], ["runtime", "77 min"], ["actors", "Patrick Brice, Mark Duplass"], ["plot", "A young videographer answers an online ad for a one-day job in a remote town to record the last messages of a dying man. When he notices the man's odd behavior, he starts to question his intentions."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTY0NTU2ODM5Ml5BMl5BanBnXkFtZTgwMTAwOTA5NTE@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.981048"], ["updated_at", "2020-10-01 18:39:08.981048"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "As Above, So Below"], ["genre", "Horror"], ["year", "2014"], ["rated", "R"], ["runtime", "94 min"], ["actors", "Perdita Weeks, Ben Feldman, Edwin Hodge, François Civil"], ["plot", "When a team of explorers ventures into the catacombs that lie beneath the streets of Paris, they uncover the dark secret that lies within this city of the dead."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.984687"], ["updated_at", "2020-10-01 18:39:08.984687"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Silent Hill"], ["genre", "Horror"], ["year", "2006"], ["rated", "R"], ["runtime", "125 min"], ["actors", "Radha Mitchell, Sean Bean, Laurie Holden, Deborah Kara Unger"], ["plot", "A woman, Rose, goes in search for her adopted daughter within the confines of a strange, desolate town called Silent Hill."], ["poster", "https://m.media-amazon.com/images/M/MV5BOWQzNTU3NGUtNDAxMi00ZjFjLTkyYWUtYjgwZDJiMDljZWY4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.989594"], ["updated_at", "2020-10-01 18:39:08.989594"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Evil Dead"], ["genre", "Horror"], ["year", "1981"], ["rated", "NC-17"], ["runtime", "85 min"], ["actors", "Bruce Campbell, Ellen Sandweiss, Richard DeManincor, Betsy Baker"], ["plot", "Five friends travel to a cabin in the woods, where they unknowingly release flesh-possessing demons."], ["poster", "https://m.media-amazon.com/images/M/MV5BODc2MmVjZmUtNjAzMS00MDNiLWIyM2YtOGEzMjg0YjRhMzRmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.993626"], ["updated_at", "2020-10-01 18:39:08.993626"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Grave Encounters"], ["genre", "Horror"], ["year", "2011"], ["rated", "Not Rated"], ["runtime", "92 min"], ["actors", "Ben Wilkinson, Sean Rogerson, Ashleigh Gryzko, Merwin Mondesir"], ["plot", "For their ghost hunting reality show, a production crew locks themselves inside an abandoned mental hospital that's supposedly haunted - and it might prove to be all too true."], ["poster", "https://m.media-amazon.com/images/M/MV5BMjQ0NjQxOTM5N15BMl5BanBnXkFtZTcwNzUwMzMwNg@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:08.997348"], ["updated_at", "2020-10-01 18:39:08.997348"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Hope Floats"], ["genre", "Romance"], ["year", "1998"], ["rated", "PG-13"], ["runtime", "114 min"], ["actors", "Sandra Bullock, Harry Connick Jr., Gena Rowlands, Mae Whitman"], ["director", "Forest Whitaker"], ["plot", "Birdee Calvert must choose between her morals and her heart after her husband divorces her and a charming young man, who her daughter disapproves of, comes back into her life."], ["poster", "https://m.media-amazon.com/images/M/MV5BNjFkMjViY2YtZDY2Ny00NjQ3LTlmZmItYjM0NTY5YmFiMDFjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.001306"], ["updated_at", "2020-10-01 18:39:09.001306"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "A Walk to Remember"], ["genre", "Romance"], ["year", "2002"], ["rated", "PG"], ["runtime", "101 min"], ["actors", "Shane West, Mandy Moore, Peter Coyote, Daryl Hannah"], ["director", "Adam Shankman"], ["plot", "The story of two North Carolina teens, Landon Carter and Jamie Sullivan, who are thrown together after Landon gets into trouble and is made to do community service."], ["poster", "https://m.media-amazon.com/images/M/MV5BMzU3NTYxM2MtNjViMS00YmNlLWEwM2MtYWI2MzgzNTkxODFjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.005699"], ["updated_at", "2020-10-01 18:39:09.005699"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Notebook"], ["genre", "Romance"], ["year", "2004"], ["rated", "PG-13"], ["runtime", "123 min"], ["actors", "Tim Ivey, Gena Rowlands, Starletta DuPois, James Garner"], ["director", "Nick Cassavetes"], ["plot", "A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom, but they are soon separated because of their social differences."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.010511"], ["updated_at", "2020-10-01 18:39:09.010511"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Dear John"], ["genre", "Romance"], ["year", "2010"], ["rated", "PG-13"], ["runtime", "108 min"], ["actors", "Channing Tatum, Amanda Seyfried, Richard Jenkins, Henry Thomas"], ["director", "Lasse Hallström"], ["plot", "A romantic drama about a soldier who falls for a conservative college student while he's home on leave."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTk1NDEzMTU5NV5BMl5BanBnXkFtZTcwNTI3MTk5Mg@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.014335"], ["updated_at", "2020-10-01 18:39:09.014335"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Remember Me"], ["genre", "Romance"], ["year", "2010"], ["rated", "PG-13"], ["runtime", "113 min"], ["actors", "Caitlyn Rund, Moisés Acevedo, Noel Rodriguez, Kevin P. McCarthy"], ["director", "Allen Coulter"], ["plot", "A romantic drama centered on two new lovers: Tyler, whose parents have split in the wake of his brother's suicide, and Ally, who lives each day to the fullest since witnessing her mother's murder."], ["poster", "https://m.media-amazon.com/images/M/MV5BOTA4MTg1ODkwNF5BMl5BanBnXkFtZTcwMzE5ODAxMw@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.018505"], ["updated_at", "2020-10-01 18:39:09.018505"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Sleepless in Seattle"], ["genre", "Romance"], ["year", "1993"], ["rated", "PG"], ["runtime", "105 min"], ["actors", "Tom Hanks, Ross Malinger, Rita Wilson, Victor Garber"], ["plot", "A recently widowed man's son calls a radio talk-show in an attempt to find his father a partner."], ["poster", "https://m.media-amazon.com/images/M/MV5BNWY1MDJkZGUtZTE2OS00ODZiLTlmNzQtMDZjNzM2ZjkwM2QxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.022374"], ["updated_at", "2020-10-01 18:39:09.022374"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Lost Husband"], ["genre", "Romance"], ["year", "2020"], ["rated", "PG-13"], ["runtime", "109 min"], ["actors", "Leslie Bibb, Kevin Alejandro, Josh Duhamel, Carly Pope"], ["plot", "Trying to put her life back together after the death of her husband, Libby and her children move to her estranged Aunt's goat farm in central Texas."], ["poster", "https://m.media-amazon.com/images/M/MV5BZWY1Y2RiM2ItZmYzOS00ZDU3LWEwMzAtNTFjYmRjZTJmYWRmXkEyXkFqcGdeQXVyMzE4NTc2MjU@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.026307"], ["updated_at", "2020-10-01 18:39:09.026307"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Silver Linings Playbook"], ["genre", "Romance"], ["year", "2012"], ["rated", "R"], ["runtime", "122 min"], ["actors", "Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver"], ["plot", "After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTM2MTI5NzA3MF5BMl5BanBnXkFtZTcwODExNTc0OA@@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.030189"], ["updated_at", "2020-10-01 18:39:09.030189"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Theory of Everything"], ["genre", "Romance"], ["year", "2014"], ["rated", "PG-13"], ["runtime", "123 min"], ["actors", "Eddie Redmayne, Felicity Jones, Tom Prior, Sophie Perry"], ["plot", "A look at the relationship between the famous physicist Stephen Hawking and his wife."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTAwMTU4MDA3NDNeQTJeQWpwZ15BbWU4MDk4NTMxNTIx._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.034410"], ["updated_at", "2020-10-01 18:39:09.034410"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Titanic"], ["genre", "Romance"], ["year", "1997"], ["rated", "PG-13"], ["runtime", "194 min"], ["actors", "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates"], ["plot", "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."], ["poster", "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"], ["created_at", "2020-10-01 18:39:09.039011"], ["updated_at", "2020-10-01 18:39:09.039011"]]
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/movies" for ::1 at 2020-10-01 13:39:40 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Completed 200 OK in 61ms (Views: 0.7ms | ActiveRecord: 9.4ms | Allocations: 4152)
+
+
+Started GET "/movies" for ::1 at 2020-10-01 13:39:40 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 744)
+
+
+Started POST "/login" for ::1 at 2020-10-01 13:39:58 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 338ms (Views: 1.7ms | ActiveRecord: 4.9ms | Allocations: 5362)
+
+
+Started GET "/movies" for ::1 at 2020-10-01 13:39:59 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (7.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 101ms (Views: 73.5ms | ActiveRecord: 18.5ms | Allocations: 20247)
+
+
+Started GET "/movies" for ::1 at 2020-10-01 13:41:23 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 218ms (Views: 202.6ms | ActiveRecord: 11.6ms | Allocations: 12762)
+
+
+Started GET "/movies" for ::1 at 2020-10-01 13:41:23 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 33ms (Views: 24.4ms | ActiveRecord: 2.4ms | Allocations: 12740)
+
+
+Started POST "/login" for ::1 at 2020-10-01 14:13:09 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 1007ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 912)
+
+
+Started GET "/movies" for ::1 at 2020-10-01 14:13:10 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (3.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 667ms (Views: 630.5ms | ActiveRecord: 4.4ms | Allocations: 12747)
+
+
+Started POST "/signup" for ::1 at 2020-10-01 14:14:36 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Angelo", "password"=>"[FILTERED]", "name"=>"Angelo", "age"=>"50"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Angelo"], ["age", 50], ["username", "Angelo"], ["password_digest", "$2a$12$GoOZOqRA4kFir9OS9Yc5Z.a3kqJUbc5qJxPEq1RIQQXLDc1YOdrNy"], ["created_at", "2020-10-01 19:14:37.461146"], ["updated_at", "2020-10-01 19:14:37.461146"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 200 OK in 688ms (Views: 2.2ms | ActiveRecord: 4.1ms | Allocations: 3250)
+
+
+Started POST "/login" for ::1 at 2020-10-01 14:14:42 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Angelo", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Angelo", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Angelo"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 597ms (Views: 0.1ms | ActiveRecord: 0.4ms | Allocations: 798)
+
+
+Started GET "/movies" for ::1 at 2020-10-01 14:14:43 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (9.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 298ms (Views: 193.5ms | ActiveRecord: 13.4ms | Allocations: 12740)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 10:11:42 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 144ms (Views: 90.4ms | ActiveRecord: 37.5ms | Allocations: 28063)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 10:11:43 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (0.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 194ms (Views: 183.7ms | ActiveRecord: 0.8ms | Allocations: 12743)
+
+
+Started POST "/login" for ::1 at 2020-10-02 10:14:47 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 425ms (Views: 0.1ms | ActiveRecord: 1.3ms | Allocations: 953)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 10:14:47 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.5ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 96ms (Views: 85.9ms | ActiveRecord: 1.9ms | Allocations: 12740)
+
+
+Started POST "/login" for ::1 at 2020-10-02 10:33:38 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 479ms (Views: 0.7ms | ActiveRecord: 9.3ms | Allocations: 909)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 10:33:39 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 185ms (Views: 175.2ms | ActiveRecord: 1.9ms | Allocations: 12747)
+
+
+Started POST "/login" for ::1 at 2020-10-02 10:48:41 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 845ms (Views: 0.5ms | ActiveRecord: 2.5ms | Allocations: 913)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 10:48:43 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (22.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (6.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 153ms (Views: 117.6ms | ActiveRecord: 28.9ms | Allocations: 12747)
+
+
+Started POST "/login" for ::1 at 2020-10-02 11:02:52 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 415ms (Views: 0.8ms | ActiveRecord: 10.2ms | Allocations: 909)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 11:02:53 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (6.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 52ms (Views: 34.7ms | ActiveRecord: 7.7ms | Allocations: 12747)
+
+
+Started POST "/login" for ::1 at 2020-10-02 11:10:12 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 715ms (Views: 0.9ms | ActiveRecord: 3.0ms | Allocations: 897)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 11:10:13 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (47.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (18.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 164ms (Views: 85.3ms | ActiveRecord: 65.8ms | Allocations: 12745)
+
+
+Started POST "/login" for ::1 at 2020-10-02 11:16:31 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Kiri", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Kiri", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (7.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Kiri"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 10.0ms | Allocations: 777)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 11:16:32 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 6ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 11:18:31 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 11:18:31 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started POST "/signup" for ::1 at 2020-10-02 11:19:04 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Cindy", "password"=>"[FILTERED]", "name"=>"Cindy", "age"=>"19"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (26.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Cindy"], ["age", 19], ["username", "Cindy"], ["password_digest", "$2a$12$7ilU.C1Q4C4QXivt3Y/pguwQrfbxn6jINqkuDwWaZaGkNlAoUCtAK"], ["created_at", "2020-10-02 16:19:05.826186"], ["updated_at", "2020-10-02 16:19:05.826186"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 200 OK in 1197ms (Views: 0.4ms | ActiveRecord: 38.3ms | Allocations: 3237)
+
+
+Started POST "/login" for ::1 at 2020-10-02 11:19:10 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Cindy", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Cindy", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Cindy"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 544ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 796)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 11:19:11 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (21.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (4.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 102ms (Views: 53.4ms | ActiveRecord: 25.4ms | Allocations: 12744)
+
+
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mBondMovie Load (11.9ms)[0m  [1m[34mSELECT "bond_movies".* FROM "bond_movies"[0m
+  [1m[36mBond Load (0.9ms)[0m  [1m[34mSELECT "bonds".* FROM "bonds"[0m
+  [1m[36mUserMovie Load (7.0ms)[0m  [1m[34mSELECT "user_movies".* FROM "user_movies"[0m
+  [1m[36mMovie Load (1.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (30.0ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 76]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 77]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 78]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 79]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 80]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 81]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 82]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 83]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 84]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 85]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 86]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 87]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 88]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 89]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 90]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 91]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 92]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 93]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 94]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 95]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 96]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 97]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 98]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 99]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 100]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 101]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 102]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 103]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (1.6ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 104]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 105]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 106]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 107]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 108]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 109]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 110]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 111]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.7ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 112]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 113]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 114]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 115]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 116]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 117]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 118]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 119]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 120]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 121]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 122]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 123]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 124]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Destroy (0.4ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 125]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 18]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Ted"], ["age", 30], ["username", "Tneebs"], ["password_digest", "$2a$12$/ih2AhT/jX.FALlRZyTAyOEvQv7jVVjc432oUT.TrJpK6b8LmFKQO"], ["created_at", "2020-10-02 16:26:00.488823"], ["updated_at", "2020-10-02 16:26:00.488823"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Shivang"], ["age", 25], ["username", "Shivvy"], ["password_digest", "$2a$12$O9uxfkHw0L8eQl2abr4KF.bnwsqxf3kN1nvkC3pMfuFoQQ96VOWsi"], ["created_at", "2020-10-02 16:26:00.749684"], ["updated_at", "2020-10-02 16:26:00.749684"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (1.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Mr. Deeds"], ["genre", "Comedy"], ["year", "2002"], ["rated", "PG-13"], ["runtime", "96 min"], ["actors", "Adam Sandler, Winona Ryder, John Turturro, Allen Covert"], ["director", "Steven Brill"], ["plot", "A sweet-natured, small-town guy inherits a controlling stake in a media conglomerate and begins to do business his way."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTU3NTE3M2QtNWQ0MS00ZmRkLWIwNTMtOTA0ZGM5N2UwMWNjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.756274"], ["updated_at", "2020-10-02 16:26:00.756274"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Despicable Me"], ["genre", "Comedy"], ["year", "2010"], ["rated", "PG"], ["runtime", "95 min"], ["actors", "Steve Carell, Jason Segel, Russell Brand, Julie Andrews"], ["director", "Pierre Coffin, Chris Renaud"], ["plot", "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTY3NjY0MTQ0Nl5BMl5BanBnXkFtZTcwMzQ2MTc0Mw@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.763232"], ["updated_at", "2020-10-02 16:26:00.763232"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Coneheads"], ["genre", "Comedy"], ["year", "1993"], ["rated", "PG"], ["runtime", "88 min"], ["actors", "Robert Knott, Jonathan Penner, Whip Hubley, Dan Aykroyd"], ["director", "Steve Barron"], ["plot", "Aliens with conical crania crash-land on Earth."], ["poster", "https://m.media-amazon.com/images/M/MV5BYTNjNGM5OTktM2Q1Zi00YTFmLWJlYzUtMTMyMzgzNjNlNmQzL2ltYWdlXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.783959"], ["updated_at", "2020-10-02 16:26:00.783959"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Grandma's Boy"], ["genre", "Comedy"], ["year", "2006"], ["rated", "R"], ["runtime", "94 min"], ["actors", "Linda Cardellini, Allen Covert, Peter Dante, Shirley Jones"], ["director", "Nicholaus Goossen"], ["plot", "A thirty-five-year-old video game tester has to move in with his grandma and her two old lady roommates."], ["poster", "https://m.media-amazon.com/images/M/MV5BMDFiYzQ0NzktMGNkNy00YTQ0LTgxODgtNDViNGIxMTc1NGFjL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.788776"], ["updated_at", "2020-10-02 16:26:00.788776"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Ted"], ["genre", "Comedy"], ["year", "2012"], ["rated", "R"], ["runtime", "106 min"], ["actors", "Mark Wahlberg, Mila Kunis, Seth MacFarlane, Joel McHale"], ["director", "Seth MacFarlane"], ["plot", "John Bennett, a man whose childhood wish of bringing his teddy bear to life came true, now must decide between keeping the relationship with the bear or his girlfriend, Lori."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTQ1OTU0ODcxMV5BMl5BanBnXkFtZTcwOTMxNTUwOA@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.793186"], ["updated_at", "2020-10-02 16:26:00.793186"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Clerks"], ["genre", "Comedy"], ["year", "1994"], ["rated", "R"], ["runtime", "92 min"], ["actors", "Brian O'Halloran, Jeff Anderson, Marilyn Ghigliotti, Lisa Spoonauer"], ["plot", "A day in the lives of two convenience clerks named Dante and Randal as they annoy customers, discuss movies, and play hockey on the store roof."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.799320"], ["updated_at", "2020-10-02 16:26:00.799320"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Clerk II"], ["genre", "Comedy"], ["year", "2006"], ["rated", "R"], ["runtime", "97 min"], ["actors", "Brian O'Halloran, Jeff Anderson, Jason Mewes, Kevin Smith"], ["plot", "A calamity at Dante and Randal's shops sends them looking for new horizons - but they ultimately settle at the fast food empire Mooby's."], ["poster", "https://m.media-amazon.com/images/M/MV5BODg1MzY2NDY0OF5BMl5BanBnXkFtZTcwNDgyMzQzMQ@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.803981"], ["updated_at", "2020-10-02 16:26:00.803981"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Mallrats"], ["genre", "Comedy"], ["year", "1995"], ["rated", "R"], ["runtime", "94 min"], ["actors", "Shannen Doherty, Jeremy London, Jason Lee, Claire Forlani"], ["plot", "Both dumped by their girlfriends, two best friends seek refuge in the local mall."], ["poster", "https://m.media-amazon.com/images/M/MV5BZGNhYzE4YzktNDIwNC00YmRiLTgyOTgtMzk1ZjNhNmI4ODI1XkEyXkFqcGdeQXVyMTk3NDAwMzI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.808060"], ["updated_at", "2020-10-02 16:26:00.808060"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Dogma"], ["genre", "Comedy"], ["year", "1999"], ["rated", "R"], ["runtime", "130 min"], ["actors", "Bud Cort, Barret Hackney, Jared Pfennigwerth, Kitao Sakurai"], ["plot", "An abortion clinic worker with a special heritage is called upon to save the existence of humanity from being negated by two renegade angels trying to exploit a loop-hole and reenter Heaven."], ["poster", "https://m.media-amazon.com/images/M/MV5BYzAyOWUyZjQtNDBiMy00ZDExLTgwNmMtZDdmY2ViNzkyN2Y0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.812125"], ["updated_at", "2020-10-02 16:26:00.812125"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Addams Family"], ["genre", "Comedy"], ["year", "1991"], ["rated", "PG-13"], ["runtime", "99 min"], ["actors", "Anjelica Huston, Raul Julia, Christopher Lloyd, Dan Hedaya"], ["plot", "Con artists plan to fleece an eccentric family using an accomplice who claims to be their long-lost uncle."], ["poster", "https://m.media-amazon.com/images/M/MV5BODc1NmY0MDUtNjUzNS00ODdhLWJlN2ItMTgwZjczZjI0MDkyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.817094"], ["updated_at", "2020-10-02 16:26:00.817094"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Being John Malkovich"], ["genre", "Drama"], ["year", "1999"], ["rated", "R"], ["runtime", "113 min"], ["actors", "John Cusack, Cameron Diaz, Ned Bellamy, Eric Weinstein"], ["director", "Spike Jonze"], ["plot", "A puppeteer discovers a portal that leads literally into the head of movie star John Malkovich."], ["poster", "https://m.media-amazon.com/images/M/MV5BYmUxY2MyOTQtYjRlMi00ZWEwLTkzODctZDMxNDcyNTFhYjNjXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.821932"], ["updated_at", "2020-10-02 16:26:00.821932"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Eternal Sunshine of the Spotless Mind"], ["genre", "Drama"], ["year", "2004"], ["rated", "R"], ["runtime", "108 min"], ["actors", "Jim Carrey, Kate Winslet, Gerry Robert Byrne, Elijah Wood"], ["director", "Michel Gondry"], ["plot", "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.826315"], ["updated_at", "2020-10-02 16:26:00.826315"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Into the Wild"], ["genre", "Drama"], ["year", "2007"], ["rated", "R"], ["runtime", "148 min"], ["actors", "Emile Hirsch, Marcia Gay Harden, William Hurt, Jena Malone"], ["director", "Sean Penn"], ["plot", "After graduating from Emory University, top student and athlete Christopher McCandless abandons his possessions, gives his entire $24,000 savings account to charity and hitchhikes to Alaska to live in the wilderness. Along the way, Christopher encounters a series of characters that shape his life."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTAwNDEyODU1MjheQTJeQWpwZ15BbWU2MDc3NDQwNw@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.831073"], ["updated_at", "2020-10-02 16:26:00.831073"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Pulp Fiction"], ["genre", "Drama"], ["year", "1994"], ["rated", "R"], ["runtime", "154 min"], ["actors", "Tim Roth, Amanda Plummer, Laura Lovelace, John Travolta"], ["director", "Quentin Tarantino"], ["plot", "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."], ["poster", "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.836490"], ["updated_at", "2020-10-02 16:26:00.836490"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Kids"], ["genre", "Drama"], ["year", "1995"], ["rated", "Unrated"], ["runtime", "91 min"], ["actors", "Leo Fitzpatrick, Sarah Henderson, Justin Pierce, Joseph Chan"], ["director", "Larry Clark"], ["plot", "A day in the life of a group of teens as they travel around New York City skating, drinking, smoking and deflowering virgins."], ["poster", "https://m.media-amazon.com/images/M/MV5BNTNmN2QyNTgtMTk0ZC00NmFhLWJlNzctZmMyYTczZTYyMzA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.840607"], ["updated_at", "2020-10-02 16:26:00.840607"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "One Flew Over the Cuckoo's Nest"], ["genre", "Drama"], ["year", "1975"], ["rated", "R"], ["runtime", "133 min"], ["actors", "Michael Berryman, Peter Brocco, Dean R. Brooks, Alonzo Brown"], ["plot", "A criminal pleads insanity and is admitted to a mental institution, where he rebels against the oppressive nurse and rallies up the scared patients."], ["poster", "https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.846791"], ["updated_at", "2020-10-02 16:26:00.846791"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Founder"], ["genre", "Drama"], ["year", "2016"], ["rated", "PG-13"], ["runtime", "115 min"], ["actors", "Michael Keaton, Nick Offerman, John Carroll Lynch, Linda Cardellini"], ["plot", "The story of Ray Kroc, a salesman who turned two brothers' innovative fast food eatery, McDonald's, into the biggest restaurant business in the world, with a combination of ambition, persistence, and ruthlessness."], ["poster", "https://m.media-amazon.com/images/M/MV5BMzExNDg0MDk1M15BMl5BanBnXkFtZTgwNzE1Mjg0MDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.851503"], ["updated_at", "2020-10-02 16:26:00.851503"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Million Dollar Baby"], ["genre", "Drama"], ["year", "2004"], ["rated", "PG-13"], ["runtime", "132 min"], ["actors", "Clint Eastwood, Hilary Swank, Morgan Freeman, Jay Baruchel"], ["plot", "A determined woman works with a hardened boxing trainer to become a professional."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTkxNzA1NDQxOV5BMl5BanBnXkFtZTcwNTkyMTIzMw@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.856618"], ["updated_at", "2020-10-02 16:26:00.856618"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "There Will Be Blood"], ["genre", "Drama"], ["year", "2007"], ["rated", "R"], ["runtime", "158 min"], ["actors", "Daniel Day-Lewis, Martin Stringer, Matthew Braden Stringer, Jacob Stringer"], ["plot", "A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business."], ["poster", "https://m.media-amazon.com/images/M/MV5BMjAxODQ4MDU5NV5BMl5BanBnXkFtZTcwMDU4MjU1MQ@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.861121"], ["updated_at", "2020-10-02 16:26:00.861121"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Taxi Driver"], ["genre", "Drama"], ["year", "1976"], ["rated", "R"], ["runtime", "114 min"], ["actors", "Diahnne Abbott, Frank Adu, Victor Argo, Gino Ardito"], ["plot", "A mentally unstable veteran works as a nighttime taxi driver in New York City, where the perceived decadence and sleaze fuels his urge for violent action by attempting to liberate a presidential campaign worker and an underage prostitute."], ["poster", "https://m.media-amazon.com/images/M/MV5BM2M1MmVhNDgtNmI0YS00ZDNmLTkyNjctNTJiYTQ2N2NmYzc2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.865610"], ["updated_at", "2020-10-02 16:26:00.865610"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Bloodsport"], ["genre", "Action"], ["year", "1988"], ["rated", "R"], ["runtime", "92 min"], ["actors", "Jean-Claude Van Damme, Donald Gibb, Leah Ayres, Norman Burton"], ["director", "Newt Arnold"], ["plot", "Bloodsport follows Frank Dux, an American martial artist serving in the military, who decides to leave the army to compete in a martial arts tournament in Hong Kong where fights to the death can occur."], ["poster", "https://m.media-amazon.com/images/M/MV5BNTJmMGEzMTQtMzQzMi00YjE1LWI4MTctNjY0NWZiYzE2MDVhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.870008"], ["updated_at", "2020-10-02 16:26:00.870008"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "A Knight's Tale"], ["genre", "Action"], ["year", "2001"], ["rated", "PG-13"], ["runtime", "132 min"], ["actors", "Heath Ledger, Rufus Sewell, Shannyn Sossamon, Paul Bettany"], ["director", "Brian Helgeland"], ["plot", "After his master dies, a peasant squire, fueled by his desire for food and glory, creates a new identity for himself as a knight."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTE5OTE4OTE2Nl5BMl5BanBnXkFtZTYwMDkzMTQ3._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.874239"], ["updated_at", "2020-10-02 16:26:00.874239"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Anaconda"], ["genre", "Action"], ["year", "1997"], ["rated", "R"], ["runtime", "89 min"], ["actors", "Jennifer Lopez, Ice Cube, Jon Voight, Eric Stoltz"], ["director", "Luis Llosa"], ["plot", "A National Geographic film crew is taken hostage by an insane hunter, who forces them along on his quest to capture the world's largest - and deadliest - snake."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTMzMTU5NjcxNl5BMl5BanBnXkFtZTcwMzE2NDU2MQ@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.879128"], ["updated_at", "2020-10-02 16:26:00.879128"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (1.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Sin City"], ["genre", "Action"], ["year", "2005"], ["rated", "R"], ["runtime", "124 min"], ["actors", "Jessica Alba, Devon Aoki, Alexis Bledel, Powers Boothe"], ["director", "Frank Miller, Quentin Tarantino, Robert Rodriguez"], ["plot", "A movie that explores the dark and miserable town, Basin City, tells the story of three different people, all caught up in violent corruption."], ["poster", "https://m.media-amazon.com/images/M/MV5BODZmYjMwNzEtNzVhNC00ZTRmLTk2M2UtNzE1MTQ2ZDAxNjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.883685"], ["updated_at", "2020-10-02 16:26:00.883685"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Star Wars: Episode IV - A New Hope"], ["genre", "Action"], ["year", "1977"], ["rated", "PG"], ["runtime", "121 min"], ["actors", "Mark Hamill, Harrison Ford, Carrie Fisher, Peter Cushing"], ["director", "George Lucas"], ["plot", "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.891860"], ["updated_at", "2020-10-02 16:26:00.891860"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Underworld"], ["genre", "Action"], ["year", "2003"], ["rated", "R"], ["runtime", "121 min"], ["actors", "Kate Beckinsale, Scott Speedman, Michael Sheen, Shane Brolly"], ["plot", "Selene, a vampire warrior, is entrenched in a conflict between vampires and werewolves, while falling in love with Michael, a human who is sought by werewolves for unknown reasons."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTk1OTc2ZmUtODU0Yy00NGJiLWJmNmQtODI0MzBjODk3MjI4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.896821"], ["updated_at", "2020-10-02 16:26:00.896821"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Terminator"], ["genre", "Action"], ["year", "1984"], ["rated", "R"], ["runtime", "107 min"], ["actors", "Arnold Schwarzenegger, Michael Biehn, Linda Hamilton, Paul Winfield"], ["plot", "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman whose unborn son is the key to humanity's future salvation."], ["poster", "https://m.media-amazon.com/images/M/MV5BYTViNzMxZjEtZGEwNy00MDNiLWIzNGQtZDY2MjQ1OWViZjFmXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.904011"], ["updated_at", "2020-10-02 16:26:00.904011"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Angel Has Fallen"], ["genre", "Action"], ["year", "2019"], ["rated", "R"], ["runtime", "121 min"], ["actors", "Gerard Butler, Frederick Schmidt, Danny Huston, Rocci Williams"], ["plot", "Mike Banning is framed for the attempted assassination of the President and must evade his own agency and the FBI as he tries to uncover the real threat."], ["poster", "https://m.media-amazon.com/images/M/MV5BYmRmMWZhZGItYzA4MC00ZDYyLWE0OTMtYmM0MWRiN2Q4NGU2XkEyXkFqcGdeQXVyMjMxOTE0ODA@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.909191"], ["updated_at", "2020-10-02 16:26:00.909191"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Mad Max"], ["genre", "Action"], ["year", "1979"], ["rated", "R"], ["runtime", "88 min"], ["actors", "Mel Gibson, Joanne Samuel, Hugh Keays-Byrne, Steve Bisley"], ["plot", "In a self-destructing world, a vengeful Australian policeman sets out to stop a violent motorcycle gang."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTM4Mjg5ODEzMV5BMl5BanBnXkFtZTcwMDc3NDk0NA@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.913590"], ["updated_at", "2020-10-02 16:26:00.913590"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Die Hard"], ["genre", "Action"], ["year", "1988"], ["rated", "R"], ["runtime", "132 min"], ["actors", "Bruce Willis, Bonnie Bedelia, Reginald VelJohnson, Paul Gleason"], ["plot", "An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles."], ["poster", "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.918977"], ["updated_at", "2020-10-02 16:26:00.918977"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Exorcist"], ["genre", "Horror"], ["year", "1973"], ["rated", "R"], ["runtime", "122 min"], ["actors", "Ellen Burstyn, Max von Sydow, Lee J. Cobb, Kitty Winn"], ["director", "William Friedkin"], ["plot", "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her."], ["poster", "https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.925103"], ["updated_at", "2020-10-02 16:26:00.925103"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "It Follows"], ["genre", "Horror"], ["year", "2014"], ["rated", "R"], ["runtime", "100 min"], ["actors", "Bailey Spry, Carollette Phillips, Loren Bass, Keir Gilchrist"], ["director", "David Robert Mitchell"], ["plot", "A young woman is followed by an unknown supernatural force after a sexual encounter."], ["poster", "https://m.media-amazon.com/images/M/MV5BMmU0MjBlYzYtZWY0MC00MjliLWI3ZmUtMzhlZDVjMWVmYWY4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.929094"], ["updated_at", "2020-10-02 16:26:00.929094"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Poltergeist"], ["genre", "Horror"], ["year", "1982"], ["rated", "PG"], ["runtime", "114 min"], ["actors", "Craig T. Nelson, JoBeth Williams, Beatrice Straight, Dominique Dunne"], ["director", "Tobe Hooper"], ["plot", "A family's home is haunted by a host of demonic ghosts."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzliZmRlYTctYmNkYS00NzE5LWI1OWQtMTRiODY5MDMwMTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.933785"], ["updated_at", "2020-10-02 16:26:00.933785"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Omen"], ["genre", "Horror"], ["year", "1976"], ["rated", "R"], ["runtime", "111 min"], ["actors", "Gregory Peck, Lee Remick, David Warner, Billie Whitelaw"], ["director", "Richard Donner"], ["plot", "Mysterious deaths surround an American ambassador. Could the child that he is raising actually be the Antichrist? The Devil's own son?"], ["poster", "https://m.media-amazon.com/images/M/MV5BZmNjZDcwNTMtMjQxMy00ZTY5LTg4M2YtYjA5NDliNjNhYzQ3XkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.939144"], ["updated_at", "2020-10-02 16:26:00.939144"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Blair Witch Project"], ["genre", "Horror"], ["year", "1999"], ["rated", "R"], ["runtime", "81 min"], ["actors", "Heather Donahue, Joshua Leonard, Michael C. Williams, Bob Griffin"], ["director", "Daniel Myrick, Eduardo Sánchez"], ["plot", "Three film students vanish after traveling into a Maryland forest to film a documentary on the local Blair Witch legend, leaving only their footage behind."], ["poster", "https://m.media-amazon.com/images/M/MV5BNzQ1NDBlNDItMDAyYS00YTI2LTgwMmYtMzAwMzg4NDFlM2ZmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.943412"], ["updated_at", "2020-10-02 16:26:00.943412"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Creep"], ["genre", "Horror"], ["year", "2014"], ["rated", "R"], ["runtime", "77 min"], ["actors", "Patrick Brice, Mark Duplass"], ["plot", "A young videographer answers an online ad for a one-day job in a remote town to record the last messages of a dying man. When he notices the man's odd behavior, he starts to question his intentions."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTY0NTU2ODM5Ml5BMl5BanBnXkFtZTgwMTAwOTA5NTE@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.947327"], ["updated_at", "2020-10-02 16:26:00.947327"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "As Above, So Below"], ["genre", "Horror"], ["year", "2014"], ["rated", "R"], ["runtime", "94 min"], ["actors", "Perdita Weeks, Ben Feldman, Edwin Hodge, François Civil"], ["plot", "When a team of explorers ventures into the catacombs that lie beneath the streets of Paris, they uncover the dark secret that lies within this city of the dead."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTQzNzg0NDI2MF5BMl5BanBnXkFtZTgwMzgxNzY2MTE@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.953243"], ["updated_at", "2020-10-02 16:26:00.953243"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Silent Hill"], ["genre", "Horror"], ["year", "2006"], ["rated", "R"], ["runtime", "125 min"], ["actors", "Radha Mitchell, Sean Bean, Laurie Holden, Deborah Kara Unger"], ["plot", "A woman, Rose, goes in search for her adopted daughter within the confines of a strange, desolate town called Silent Hill."], ["poster", "https://m.media-amazon.com/images/M/MV5BOWQzNTU3NGUtNDAxMi00ZjFjLTkyYWUtYjgwZDJiMDljZWY4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.958321"], ["updated_at", "2020-10-02 16:26:00.958321"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Evil Dead"], ["genre", "Horror"], ["year", "1981"], ["rated", "NC-17"], ["runtime", "85 min"], ["actors", "Bruce Campbell, Ellen Sandweiss, Richard DeManincor, Betsy Baker"], ["plot", "Five friends travel to a cabin in the woods, where they unknowingly release flesh-possessing demons."], ["poster", "https://m.media-amazon.com/images/M/MV5BODc2MmVjZmUtNjAzMS00MDNiLWIyM2YtOGEzMjg0YjRhMzRmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.962905"], ["updated_at", "2020-10-02 16:26:00.962905"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Grave Encounters"], ["genre", "Horror"], ["year", "2011"], ["rated", "Not Rated"], ["runtime", "92 min"], ["actors", "Ben Wilkinson, Sean Rogerson, Ashleigh Gryzko, Merwin Mondesir"], ["plot", "For their ghost hunting reality show, a production crew locks themselves inside an abandoned mental hospital that's supposedly haunted - and it might prove to be all too true."], ["poster", "https://m.media-amazon.com/images/M/MV5BMjQ0NjQxOTM5N15BMl5BanBnXkFtZTcwNzUwMzMwNg@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.968748"], ["updated_at", "2020-10-02 16:26:00.968748"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Hope Floats"], ["genre", "Romance"], ["year", "1998"], ["rated", "PG-13"], ["runtime", "114 min"], ["actors", "Sandra Bullock, Harry Connick Jr., Gena Rowlands, Mae Whitman"], ["director", "Forest Whitaker"], ["plot", "Birdee Calvert must choose between her morals and her heart after her husband divorces her and a charming young man, who her daughter disapproves of, comes back into her life."], ["poster", "https://m.media-amazon.com/images/M/MV5BNjFkMjViY2YtZDY2Ny00NjQ3LTlmZmItYjM0NTY5YmFiMDFjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.973028"], ["updated_at", "2020-10-02 16:26:00.973028"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "A Walk to Remember"], ["genre", "Romance"], ["year", "2002"], ["rated", "PG"], ["runtime", "101 min"], ["actors", "Shane West, Mandy Moore, Peter Coyote, Daryl Hannah"], ["director", "Adam Shankman"], ["plot", "The story of two North Carolina teens, Landon Carter and Jamie Sullivan, who are thrown together after Landon gets into trouble and is made to do community service."], ["poster", "https://m.media-amazon.com/images/M/MV5BMzU3NTYxM2MtNjViMS00YmNlLWEwM2MtYWI2MzgzNTkxODFjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.977674"], ["updated_at", "2020-10-02 16:26:00.977674"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "The Notebook"], ["genre", "Romance"], ["year", "2004"], ["rated", "PG-13"], ["runtime", "123 min"], ["actors", "Tim Ivey, Gena Rowlands, Starletta DuPois, James Garner"], ["director", "Nick Cassavetes"], ["plot", "A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom, but they are soon separated because of their social differences."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:00.981759"], ["updated_at", "2020-10-02 16:26:00.981759"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Dear John"], ["genre", "Romance"], ["year", "2010"], ["rated", "PG-13"], ["runtime", "108 min"], ["actors", "Channing Tatum, Amanda Seyfried, Richard Jenkins, Henry Thomas"], ["director", "Lasse Hallström"], ["plot", "A romantic drama about a soldier who falls for a conservative college student while he's home on leave."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTk1NDEzMTU5NV5BMl5BanBnXkFtZTcwNTI3MTk5Mg@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:01.002776"], ["updated_at", "2020-10-02 16:26:01.002776"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "director", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Remember Me"], ["genre", "Romance"], ["year", "2010"], ["rated", "PG-13"], ["runtime", "113 min"], ["actors", "Caitlyn Rund, Moisés Acevedo, Noel Rodriguez, Kevin P. McCarthy"], ["director", "Allen Coulter"], ["plot", "A romantic drama centered on two new lovers: Tyler, whose parents have split in the wake of his brother's suicide, and Ally, who lives each day to the fullest since witnessing her mother's murder."], ["poster", "https://m.media-amazon.com/images/M/MV5BOTA4MTg1ODkwNF5BMl5BanBnXkFtZTcwMzE5ODAxMw@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:01.007222"], ["updated_at", "2020-10-02 16:26:01.007222"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Sleepless in Seattle"], ["genre", "Romance"], ["year", "1993"], ["rated", "PG"], ["runtime", "105 min"], ["actors", "Tom Hanks, Ross Malinger, Rita Wilson, Victor Garber"], ["plot", "A recently widowed man's son calls a radio talk-show in an attempt to find his father a partner."], ["poster", "https://m.media-amazon.com/images/M/MV5BNWY1MDJkZGUtZTE2OS00ODZiLTlmNzQtMDZjNzM2ZjkwM2QxXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:01.011852"], ["updated_at", "2020-10-02 16:26:01.011852"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Lost Husband"], ["genre", "Romance"], ["year", "2020"], ["rated", "PG-13"], ["runtime", "109 min"], ["actors", "Leslie Bibb, Kevin Alejandro, Josh Duhamel, Carly Pope"], ["plot", "Trying to put her life back together after the death of her husband, Libby and her children move to her estranged Aunt's goat farm in central Texas."], ["poster", "https://m.media-amazon.com/images/M/MV5BZWY1Y2RiM2ItZmYzOS00ZDU3LWEwMzAtNTFjYmRjZTJmYWRmXkEyXkFqcGdeQXVyMzE4NTc2MjU@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:01.023737"], ["updated_at", "2020-10-02 16:26:01.023737"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (2.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Silver Linings Playbook"], ["genre", "Romance"], ["year", "2012"], ["rated", "R"], ["runtime", "122 min"], ["actors", "Bradley Cooper, Jennifer Lawrence, Robert De Niro, Jacki Weaver"], ["plot", "After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTM2MTI5NzA3MF5BMl5BanBnXkFtZTcwODExNTc0OA@@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:01.027965"], ["updated_at", "2020-10-02 16:26:01.027965"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "The Theory of Everything"], ["genre", "Romance"], ["year", "2014"], ["rated", "PG-13"], ["runtime", "123 min"], ["actors", "Eddie Redmayne, Felicity Jones, Tom Prior, Sophie Perry"], ["plot", "A look at the relationship between the famous physicist Stephen Hawking and his wife."], ["poster", "https://m.media-amazon.com/images/M/MV5BMTAwMTU4MDA3NDNeQTJeQWpwZ15BbWU4MDk4NTMxNTIx._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:01.037288"], ["updated_at", "2020-10-02 16:26:01.037288"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "genre", "year", "rated", "runtime", "actors", "plot", "poster", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Titanic"], ["genre", "Romance"], ["year", "1997"], ["rated", "PG-13"], ["runtime", "194 min"], ["actors", "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates"], ["plot", "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."], ["poster", "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg"], ["created_at", "2020-10-02 16:26:01.041631"], ["updated_at", "2020-10-02 16:26:01.041631"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/login" for ::1 at 2020-10-02 13:28:48 -0500
+  [1m[35m (14.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 9.7ms | Allocations: 4627)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 13:28:49 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 6.2ms | Allocations: 146)
+
+
+Started POST "/login" for ::1 at 2020-10-02 14:03:41 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 1122ms (Views: 0.4ms | ActiveRecord: 13.3ms | Allocations: 5325)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 14:03:42 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (9.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (7.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 678ms (Views: 459.1ms | ActiveRecord: 24.6ms | Allocations: 20375)
+
+
+Started POST "/signup" for ::1 at 2020-10-02 14:05:13 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Angelo", "password"=>"[FILTERED]", "name"=>"Angelo", "age"=>"50"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (15.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Angelo"], ["age", 50], ["username", "Angelo"], ["password_digest", "$2a$12$XCtLSRK/opV4srGn8NfUT.zn8L20Q72XZizaKxY6xwy7IHQthbnXi"], ["created_at", "2020-10-02 19:05:14.295296"], ["updated_at", "2020-10-02 19:05:14.295296"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 200 OK in 883ms (Views: 0.6ms | ActiveRecord: 19.1ms | Allocations: 3254)
+
+
+Started POST "/login" for ::1 at 2020-10-02 14:05:19 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Angelo", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Angelo", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Angelo"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 539ms (Views: 0.3ms | ActiveRecord: 2.4ms | Allocations: 812)
+
+
+Started GET "/movies" for ::1 at 2020-10-02 14:05:20 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (1.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 92ms (Views: 79.0ms | ActiveRecord: 9.8ms | Allocations: 12742)
+
+
+Started POST "/signup" for ::1 at 2020-10-03 12:24:48 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Gavin", "password"=>"[FILTERED]", "name"=>"Gavin", "age"=>"25"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (10.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Gavin"], ["age", 25], ["username", "Gavin"], ["password_digest", "$2a$12$2QYoLxNNKoKLbO3wb7LboeU5Ez2Laui/Hd6DWhC2NS2QQz2Qhek8y"], ["created_at", "2020-10-03 17:24:48.674057"], ["updated_at", "2020-10-03 17:24:48.674057"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 200 OK in 308ms (Views: 0.3ms | ActiveRecord: 28.9ms | Allocations: 8321)
+
+
+Started POST "/login" for ::1 at 2020-10-03 12:24:55 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Gavin", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Gavin", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Gavin"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 259ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 1315)
+
+
+Started GET "/movies" for ::1 at 2020-10-03 12:24:55 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (2.9ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 102ms (Views: 88.1ms | ActiveRecord: 12.9ms | Allocations: 20383)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:21:59 -0500
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 6.0ms | Allocations: 209)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:21:59 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:22:06 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:22:06 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:23:08 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:23:08 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:25:41 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 112)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:25:41 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/login" for ::1 at 2020-10-23 10:25:49 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (24.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 343ms (Views: 0.2ms | ActiveRecord: 62.2ms | Allocations: 8552)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:25:49 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:34:25 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:34:26 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/login" for ::1 at 2020-10-23 10:34:40 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Tneebs", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Tneebs"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 322ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 910)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:34:40 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/signup" for ::1 at 2020-10-23 10:34:55 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Test", "password"=>"[FILTERED]", "name"=>"Test", "age"=>"30"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (11.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Test"], ["age", 30], ["username", "Test"], ["password_digest", "$2a$12$I5btAXQHaJue9yI7z8TLOOtzVKU0HaSquFIPVwZQZ8MTc5bZgBJLG"], ["created_at", "2020-10-23 15:34:55.694149"], ["updated_at", "2020-10-23 15:34:55.694149"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 200 OK in 421ms (Views: 0.5ms | ActiveRecord: 16.1ms | Allocations: 3266)
+
+
+Started POST "/login" for ::1 at 2020-10-23 10:35:01 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Test", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Test", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Test"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 284ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 809)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:35:01 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:37:50 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (312.6ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 649ms (Views: 115.9ms | ActiveRecord: 354.6ms | Allocations: 20385)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:37:51 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (61.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 228ms (Views: 99.2ms | ActiveRecord: 62.6ms | Allocations: 12740)
+
+
+Started POST "/signup" for ::1 at 2020-10-23 10:47:01 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"Flatiron", "password"=>"[FILTERED]", "name"=>"Flatiron", "age"=>"30"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Flatiron"], ["age", 30], ["username", "Flatiron"], ["password_digest", "$2a$12$2uq5rxKevvoz0DR5d/WF.e/CA/Wd5P/l42cE.Iq2US8n8r/8W8zAu"], ["created_at", "2020-10-23 15:47:01.718214"], ["updated_at", "2020-10-23 15:47:01.718214"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 200 OK in 311ms (Views: 0.4ms | ActiveRecord: 3.5ms | Allocations: 2846)
+
+
+Started POST "/login" for ::1 at 2020-10-23 10:47:07 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"username"=>"Flatiron", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"username"=>"Flatiron", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Flatiron"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 200 OK in 262ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 880)
+
+
+Started GET "/movies" for ::1 at 2020-10-23 10:47:08 -0500
+Processing by MoviesController#index as */*
+  Parameters: {"movie"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mMovie Load (3.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/controllers/movies_controller.rb:10:in `index'
+Completed 200 OK in 103ms (Views: 95.0ms | ActiveRecord: 3.6ms | Allocations: 12749)
+
+
